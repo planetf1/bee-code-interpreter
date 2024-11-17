@@ -43,7 +43,7 @@ RUN apk add --no-cache gcc musl-dev linux-headers make g++ clang-dev python3 pyt
 FROM docker.io/alpine:${ALPINE_VERSION} AS runtime
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing \
     git \
-    gh \
+    github-cli \
     bash \
     coreutils \
     ffmpeg \
